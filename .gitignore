@@ -1,0 +1,49 @@
+# Gradle
+.gradle/
+build/
+**/build/
+!gradle/wrapper/gradle-wrapper.jar
+gradle/wrapper/gradle-wrapper.properties
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# Local config & secrets
+local.properties
+*.keystore
+*.jks
+*.pem
+*.p12
+
+# Android/Jetpack Compose generated
+captures/
+.externalNativeBuild/
+.cxx/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Kotlin/Java
+out/
+bin/
+
+# Crashlytics/Firebase (local artifacts)
+fabric.properties
+crashlytics-build.properties
+
+# Lint
+lint/intermediates/
+lint/generated/
+lint/outputs/
+lint/tmp/
+
+# Misc
+*.hprof
+*.orig
+*.rej
