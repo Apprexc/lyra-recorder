@@ -1,15 +1,17 @@
 name: Android CI
 
 on:
+  push:
+    branches: [ "main" ]     # run after your first push
   pull_request:
-    branches: [ "main" ]
+    branches: [ "main" ]     # run on PRs into main
+  workflow_dispatch:          # allow manual runs from Actions tab
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     env:
-      # API key is pulled from GitHub Secrets
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
     steps:
